@@ -6,19 +6,41 @@
     <title>Profil</title>
 
     <style>
+        body {
+            text-align: left;
+        }
+
         img, video {
-            width: 30%;
+            width: 100%;
+            height: auto;
         }
 
         .media {
-            text-align: left;
+            width: 30%;
+        }
+
+        .layout_keterampilan {
+            width: 15%;
+        }
+
+        textarea {
+            width: 100%;
+            height: 60px;
+        }
+
+        input {
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <h1>Profil Pribadi</h1>
 
-    <!-- Bagian foto dan video Profil -->
+    <!-- div sebagi wadah elemen di bagian media agar memudahkan dalam meberikan style CSS -->
     <div class="media">  
         <table>
             <tr>
@@ -36,21 +58,24 @@
         </table>
     </div>
 
-    <!-- Bagian Deskripsi -->
-    <div>
+    <!-- div sebagi wadah elemen di bagian deskripsi agar memudahkan dalam meberikan style CSS -->
+    <div class="deskripsi">
         <h2>Tentang Saya</h2>
-        <p>Hello, I am undergraduate Information Technology student at Telkom University. I am able to work together and always improve my abilities to make work easier.</p>
+        <p>
+            Hello, I am undergraduate Information Technology student at Telkom University. <br>
+            I am very enthusiastic about programming and I am able to work together and always improve my skills to make work easier.
+        </p>
 
         <h2>Keterampilan</h2>
-        <!-- Untuk  Membuat Layout-->
-        <table>
+        <!-- table Untuk Membuat Layout agar lebih rapih-->
+        <table class="layout_keterampilan">
             <tr>
                 <th>Keterampilan</th>
                 <th>Tingkat</th>
             </tr>
             <tr>
                 <td>HTML/CSS</td>
-                <td>Mahir</td>
+                <td>Menengah</td>
             </tr>
             <tr>
                 <td>Javascript</td>
@@ -67,35 +92,44 @@
         </table>
     </div>
 
-    <!-- Bagian Kontak -->
-     <div>
+    <!-- div sebagi wadah elemen di bagian kontak agar memudahkan dalam meberikan style CSS -->
+     <div class="kontak">
         <h2>Hubungi Saya</h2>
+        <!-- Form untuk memberikan feedback -->
         <form>
+            <!-- Table Untuk Membuat Layout agar lebih rapih-->
             <table>
                 <tr>
                     <td>Nama:</td>
+                    <!-- input name untuk mengisi nama -->
                     <td><input type="text" name="name"></td>
                 </tr>
                 <tr>
                     <td>Email:</td>
+                    <!-- input email untuk mengisi email -->
                     <td><input type="text" name="Email"></td>
                 </tr>
                 <tr>
                     <td>Pesan:</td>
-                    <td>
-                        <textarea name="pesan" rows="3"></textarea>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <!-- textarea untuk mengisi pesan yang panjang -->
+                        <textarea name="pesan"></textarea>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="submit" name="kirim" value="Kirim Pesan">
+                        <!-- button untuk mengirimkan pesan dari form -->
+                        <button type="submit">Kirim Pesan</button>
                     </td>
                 </tr>
             </table>
         </form>
 
         <h2>Media Sosial:</h2>
-        <a href="https://www.linkedin.com/in/agunglaksonoputra/" target="_blank">LinkedIn</a> |
+        <!-- a Untuk membuat link -->
+        <a href="https://www.linkedin.com/in/agunglaksonoputra/">LinkedIn</a> |
         <a href="https://github.com/Kudan1l">GitHub</a> |
         <a href="https://www.instagram.com/147.alp/">Instagram</a>
      </div>

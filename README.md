@@ -1,7 +1,9 @@
-# Tugas pendahuluan pemrograman web yang dikerjakan oleh:
+# TP_MOD3
+Tugas pendahuluan praktikum mata kuliah Pemrograman Web.
 
-AGUNG LAKSONO PUTRA
+Dibuat oleh:  
+Agung Laksono Putra  
+1303220113  
+IT-46-02    
 
-1303220113
-
-IT-46-02
+@2024
